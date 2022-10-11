@@ -63,7 +63,7 @@ const Paints: NextPage<PaintsByBrandProps> = ({ formattedBrand, paints }) => {
       </Heading>
       <VStack spacing={2} alignItems="stretch">
         {paints.map(({ name, color, range }) => {
-          const href = `/${brand}/${slugify(name, slugifyOptions)}`;
+          const href = `${brand}/${slugify(name, slugifyOptions)}`;
 
           return (
             <Link key={name} href={href}>
