@@ -1469,7 +1469,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-react@npm:^7.12.10":
+"@babel/preset-react@npm:^7.12.10, @babel/preset-react@npm:^7.18.6":
   version: 7.18.6
   resolution: "@babel/preset-react@npm:7.18.6"
   dependencies:
@@ -12161,6 +12161,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.19.3
     "@babel/preset-env": ^7.19.4
+    "@babel/preset-react": ^7.18.6
     "@babel/preset-typescript": ^7.18.6
     "@chakra-ui/react": ^2.3.5
     "@chakra-ui/storybook-addon": ^4.0.12
@@ -12197,6 +12198,7 @@ __metadata:
     next: 12.3.1
     react: 18.2.0
     react-dom: 18.2.0
+    slugify: ^1.6.5
     typescript: 4.8.4
     vite: ^3.1.7
   languageName: unknown
@@ -14899,6 +14901,13 @@ __metadata:
   version: 3.0.0
   resolution: "slash@npm:3.0.0"
   checksum: 94a93fff615f25a999ad4b83c9d5e257a7280c90a32a7cb8b4a87996e4babf322e469c42b7f649fd5796edd8687652f3fb452a86dc97a816f01113183393f11c
+  languageName: node
+  linkType: hard
+
+"slugify@npm:^1.6.5":
+  version: 1.6.5
+  resolution: "slugify@npm:1.6.5"
+  checksum: a955a1b600201030f4c1daa9bb74a17d4402a0693fc40978bbd17e44e64fd72dad3bac4037422aa8aed55b5170edd57f3f4cd8f59ba331f5cf0f10f1a7795609
   languageName: node
   linkType: hard
 

@@ -1,7 +1,5 @@
 import gamesWorkshop from "./gamesWorkshop";
 
-export { default as gamesWorkshop } from "./gamesWorkshop";
-
 export type PaintFinish = "Matte" | "Satin" | "Gloss" | "Metallic" | "String";
 
 export interface Paint {
@@ -12,3 +10,7 @@ export interface Paint {
 }
 
 export const allPaints = [...gamesWorkshop];
+
+export const paintsByBrand: Record<string, Array<Paint>> = {
+  "Games Workshop": gamesWorkshop,
+};
