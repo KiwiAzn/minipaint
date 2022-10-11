@@ -7,14 +7,11 @@ export interface SwatchProps {
   color: string;
 }
 
-const smallInPixels = 64;
-const mediumInPixels = 128;
-const largeInPixels = 256;
+const smallInPixels = "64px";
+const mediumInPixels = "128px";
+const largeInPixels = "256px";
 
-export const Swatch: FunctionComponent<SwatchProps> = ({
-  size = "medium",
-  color,
-}) => {
+export const Swatch: FunctionComponent<SwatchProps> = ({ size, color }) => {
   const commonProps: BoxProps = {
     backgroundColor: color,
     display: "inline-block",
@@ -22,18 +19,27 @@ export const Swatch: FunctionComponent<SwatchProps> = ({
 
   if (size === "small") {
     return (
-      <Box {...commonProps} height={smallInPixels} width={smallInPixels} />
+      <Box
+        {...commonProps}
+        sx={{ height: smallInPixels, width: smallInPixels }}
+      />
     );
   }
 
   if (size === "large") {
     return (
-      <Box {...commonProps} height={largeInPixels} width={largeInPixels} />
+      <Box
+        {...commonProps}
+        sx={{ height: largeInPixels, width: largeInPixels }}
+      />
     );
   }
 
   // Medium is default
   return (
-    <Box {...commonProps} height={mediumInPixels} width={mediumInPixels} />
+    <Box
+      {...commonProps}
+      sx={{ height: mediumInPixels, width: mediumInPixels }}
+    />
   );
 };

@@ -1,7 +1,8 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Container, Heading, Text, VStack } from "@chakra-ui/react";
 import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { ParsedUrlQuery } from "querystring";
 import slugify from "slugify";
+import { SwatchListItem } from "../../../libs/ui/SwatchListItem/SwatchListItem";
 import { Paint, paintsByBrand } from "../../../paints";
 
 const slugfiyOptions = { lower: true };
@@ -50,10 +51,16 @@ export const getStaticProps: GetStaticProps<
 
 const Paints: NextPage<PaintsByBrandProps> = ({ formattedBrand, paints }) => {
   return (
-    <Box>
-      <Heading>{formattedBrand}</Heading>
-      <Text>{JSON.stringify(paints)}</Text>
-    </Box>
+    <Container maxW="container.lg">
+      <Heading size="4xl" sx={{ m: 4 }}>
+        {formattedBrand}
+      </Heading>
+      <VStack spacing={2} alignItems="stretch">
+        {paints.map(({ name, color, range }) => (
+          <SwatchListItem key={name} name={name} color={color} range={range} />
+        ))}
+      </VStack>
+    </Container>
   );
 };
 
