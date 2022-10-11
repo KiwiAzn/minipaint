@@ -41,6 +41,7 @@
     "@storybook/client-api": "^6.5.12",
     "@storybook/client-logger": "^6.5.12",
     "@storybook/core-common": "^6.5.12",
+    "@storybook/jest": "^0.0.10",
     "@storybook/preview-web": "^6.5.12",
     "@storybook/react": "^6.5.12",
     "@storybook/testing-library": "^0.0.13",
