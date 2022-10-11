@@ -1887,6 +1887,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/icons@npm:2.0.11":
+  version: 2.0.11
+  resolution: "@chakra-ui/icons@npm:2.0.11"
+  dependencies:
+    "@chakra-ui/icon": 3.0.11
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 59d743810a584131a237981cf94d98a6f12a711d6226ce1d021a85cf149e9460079e7573f8484d1f21cd058b54198bec17f2fdbdea29d297580ae01020a89f97
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/image@npm:2.0.11":
   version: 2.0.11
   resolution: "@chakra-ui/image@npm:2.0.11"
@@ -2515,6 +2527,26 @@ __metadata:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
   checksum: f7e3fe258485692fc2f37cf4b3e0d3b88538e99b0c4cb6cd685387a8636765c8951f6055e8efa56b622490ce16ffbda9c91540b6abd98d33ad8df0a41ca84b23
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/storybook-addon@npm:^4.0.12":
+  version: 4.0.12
+  resolution: "@chakra-ui/storybook-addon@npm:4.0.12"
+  dependencies:
+    "@chakra-ui/icons": 2.0.11
+  peerDependencies:
+    "@chakra-ui/react": ">=2.0.0"
+    "@storybook/addons": ">=6.4"
+    "@storybook/api": ">=6.4"
+    "@storybook/components": ">=6.4"
+    react: ">=16.8.x"
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: e8678d5d0fc8ae2a50846e29fad287c476759554e2cc74b3b6ee2cb95486e8822c0dce2fda9e33b1eee52b6a828402138d8785fd85d86fb9c69c1aab332f57bb
   languageName: node
   linkType: hard
 
@@ -12131,6 +12163,7 @@ __metadata:
     "@babel/preset-env": ^7.19.4
     "@babel/preset-typescript": ^7.18.6
     "@chakra-ui/react": ^2.3.5
+    "@chakra-ui/storybook-addon": ^4.0.12
     "@emotion/react": ^11.10.4
     "@emotion/styled": ^11.10.4
     "@mdx-js/react": ^1.6.22

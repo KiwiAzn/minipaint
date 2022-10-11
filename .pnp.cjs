@@ -32,6 +32,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:7.19.4"],\
             ["@babel/preset-typescript", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:7.18.6"],\
             ["@chakra-ui/react", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:2.3.5"],\
+            ["@chakra-ui/storybook-addon", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:4.0.12"],\
             ["@emotion/react", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:11.10.4"],\
             ["@emotion/styled", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:11.10.4"],\
             ["@mdx-js/react", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:1.6.22"],\
@@ -4572,6 +4573,51 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "react"\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["virtual:ba1089f74a96df5b9163f44b01dd323c82ca7e5aa23fd12997dd5398365a2f09fddd154c9110173ab1c32a4074cb81ffdb380adf217f7dbb21e1220a42f80128#npm:3.0.11", {\
+          "packageLocation": "./.yarn/__virtual__/@chakra-ui-icon-virtual-f409a65f8e/0/cache/@chakra-ui-icon-npm-3.0.11-b1bd60f7ea-a76900cb23.zip/node_modules/@chakra-ui/icon/",\
+          "packageDependencies": [\
+            ["@chakra-ui/icon", "virtual:ba1089f74a96df5b9163f44b01dd323c82ca7e5aa23fd12997dd5398365a2f09fddd154c9110173ab1c32a4074cb81ffdb380adf217f7dbb21e1220a42f80128#npm:3.0.11"],\
+            ["@chakra-ui/shared-utils", "npm:2.0.2"],\
+            ["@chakra-ui/system", null],\
+            ["@types/chakra-ui__system", null],\
+            ["@types/react", "npm:18.0.21"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@chakra-ui/system",\
+            "@types/chakra-ui__system",\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@chakra-ui/icons", [\
+        ["npm:2.0.11", {\
+          "packageLocation": "./.yarn/cache/@chakra-ui-icons-npm-2.0.11-b1ae8bbb30-59d743810a.zip/node_modules/@chakra-ui/icons/",\
+          "packageDependencies": [\
+            ["@chakra-ui/icons", "npm:2.0.11"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:edc5da5ba1ca16e42787f6ba60b0e330c46918738589dd1ead08c9b5f68444f3b2da976fb7d4f7743001fbb5fbe79dc6b6817705e3c639923ef7ac35b384bdcb#npm:2.0.11", {\
+          "packageLocation": "./.yarn/__virtual__/@chakra-ui-icons-virtual-ba1089f74a/0/cache/@chakra-ui-icons-npm-2.0.11-b1ae8bbb30-59d743810a.zip/node_modules/@chakra-ui/icons/",\
+          "packageDependencies": [\
+            ["@chakra-ui/icons", "virtual:edc5da5ba1ca16e42787f6ba60b0e330c46918738589dd1ead08c9b5f68444f3b2da976fb7d4f7743001fbb5fbe79dc6b6817705e3c639923ef7ac35b384bdcb#npm:2.0.11"],\
+            ["@chakra-ui/icon", "virtual:ba1089f74a96df5b9163f44b01dd323c82ca7e5aa23fd12997dd5398365a2f09fddd154c9110173ab1c32a4074cb81ffdb380adf217f7dbb21e1220a42f80128#npm:3.0.11"],\
+            ["@chakra-ui/system", null],\
+            ["@types/chakra-ui__system", null],\
+            ["@types/react", "npm:18.0.21"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@chakra-ui/system",\
+            "@types/chakra-ui__system",\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@chakra-ui/image", [\
@@ -5809,6 +5855,49 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@chakra-ui/system",\
             "@types/chakra-ui__system",\
             "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@chakra-ui/storybook-addon", [\
+        ["npm:4.0.12", {\
+          "packageLocation": "./.yarn/cache/@chakra-ui-storybook-addon-npm-4.0.12-88d9abcc17-e8678d5d0f.zip/node_modules/@chakra-ui/storybook-addon/",\
+          "packageDependencies": [\
+            ["@chakra-ui/storybook-addon", "npm:4.0.12"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:4.0.12", {\
+          "packageLocation": "./.yarn/__virtual__/@chakra-ui-storybook-addon-virtual-edc5da5ba1/0/cache/@chakra-ui-storybook-addon-npm-4.0.12-88d9abcc17-e8678d5d0f.zip/node_modules/@chakra-ui/storybook-addon/",\
+          "packageDependencies": [\
+            ["@chakra-ui/storybook-addon", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:4.0.12"],\
+            ["@chakra-ui/icons", "virtual:edc5da5ba1ca16e42787f6ba60b0e330c46918738589dd1ead08c9b5f68444f3b2da976fb7d4f7743001fbb5fbe79dc6b6817705e3c639923ef7ac35b384bdcb#npm:2.0.11"],\
+            ["@chakra-ui/react", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:2.3.5"],\
+            ["@storybook/addons", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:6.5.12"],\
+            ["@storybook/api", null],\
+            ["@storybook/components", null],\
+            ["@types/chakra-ui__react", null],\
+            ["@types/react", "npm:18.0.21"],\
+            ["@types/react-dom", "npm:18.0.6"],\
+            ["@types/storybook__addons", null],\
+            ["@types/storybook__api", null],\
+            ["@types/storybook__components", null],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@chakra-ui/react",\
+            "@storybook/addons",\
+            "@storybook/api",\
+            "@storybook/components",\
+            "@types/chakra-ui__react",\
+            "@types/react-dom",\
+            "@types/react",\
+            "@types/storybook__addons",\
+            "@types/storybook__api",\
+            "@types/storybook__components",\
+            "react-dom",\
             "react"\
           ],\
           "linkType": "HARD"\
@@ -18014,6 +18103,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:7.19.4"],\
             ["@babel/preset-typescript", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:7.18.6"],\
             ["@chakra-ui/react", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:2.3.5"],\
+            ["@chakra-ui/storybook-addon", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:4.0.12"],\
             ["@emotion/react", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:11.10.4"],\
             ["@emotion/styled", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:11.10.4"],\
             ["@mdx-js/react", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:1.6.22"],\

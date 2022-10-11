@@ -20,6 +20,9 @@ const storybookConfiguration: StorybookConfig = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    // Reenable when this addon is supported by vite builder
+    // "@chakra-ui/storybook-addon",
+    "@snek-at/storybook-addon-chakra-ui",
   ],
   framework: "@storybook/react",
   features: {

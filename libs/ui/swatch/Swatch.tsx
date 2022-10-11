@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, BoxProps } from "@chakra-ui/react";
+import React from "react";
 
 export interface SwatchProps {
   size?: "small" | "medium" | "large";
@@ -14,32 +15,25 @@ export const Swatch: FunctionComponent<SwatchProps> = ({
   size = "medium",
   color,
 }) => {
+  const commonProps: BoxProps = {
+    backgroundColor: color,
+    display: "inline-block",
+  };
+
   if (size === "small") {
     return (
-      <Box
-        backgroundColor={color}
-        height={smallInPixels}
-        width={smallInPixels}
-      />
+      <Box {...commonProps} height={smallInPixels} width={smallInPixels} />
     );
   }
 
   if (size === "large") {
     return (
-      <Box
-        backgroundColor={color}
-        height={largeInPixels}
-        width={largeInPixels}
-      />
+      <Box {...commonProps} height={largeInPixels} width={largeInPixels} />
     );
   }
 
   // Medium is default
   return (
-    <Box
-      backgroundColor={color}
-      height={mediumInPixels}
-      width={mediumInPixels}
-    />
+    <Box {...commonProps} height={mediumInPixels} width={mediumInPixels} />
   );
 };
