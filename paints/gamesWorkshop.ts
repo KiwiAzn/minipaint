@@ -1,6 +1,6 @@
 import { Paint } from ".";
 
-const paints: Array<Paint> = [
+const base: Array<Paint> = [
   { name: "Corax White", color: "#FFFFFF", finish: "Satin", range: "Base" },
   { name: "Grey Seer", color: "#A2A5A7", finish: "Satin", range: "Base" },
   { name: "Celestra Grey", color: "#8BA3A3", finish: "Satin", range: "Base" },
@@ -100,5 +100,7 @@ const paints: Array<Paint> = [
   { name: "Hobgrot Hide", color: "#A1812B", finish: "Satin", range: "Base" },
   { name: "Thondia Brown", color: "#54302A", finish: "Satin", range: "Base" },
 ];
+
+const paints = [...base];
 
 export default paints;
