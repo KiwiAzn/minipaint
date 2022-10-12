@@ -69,6 +69,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-next", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:12.3.1"],\
             ["eslint-plugin-storybook", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:0.6.5"],\
             ["framer-motion", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:7.5.3"],\
+            ["fuse.js", "npm:6.6.2"],\
             ["next", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:12.3.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:18.2.0"],\
@@ -15650,6 +15651,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["fuse.js", [\
+        ["npm:6.6.2", {\
+          "packageLocation": "./.yarn/cache/fuse.js-npm-6.6.2-c23861514a-17ae758ce2.zip/node_modules/fuse.js/",\
+          "packageDependencies": [\
+            ["fuse.js", "npm:6.6.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["gauge", [\
         ["npm:3.0.2", {\
           "packageLocation": "./.yarn/cache/gauge-npm-3.0.2-9e22f7af9e-81296c00c7.zip/node_modules/gauge/",\
@@ -18435,6 +18445,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-next", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:12.3.1"],\
             ["eslint-plugin-storybook", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:0.6.5"],\
             ["framer-motion", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:7.5.3"],\
+            ["fuse.js", "npm:6.6.2"],\
             ["next", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:12.3.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:18.2.0"],\

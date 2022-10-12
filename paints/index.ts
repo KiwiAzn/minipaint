@@ -11,7 +11,7 @@ export interface Paint {
   finish: PaintFinish;
 }
 
-export const allPaints = [...gamesWorkshop];
+export const allPaints = [...gamesWorkshop, ...scale75];
 
 export const paintsByBrand: Record<string, Array<Paint>> = {
   "Games Workshop": gamesWorkshop,
