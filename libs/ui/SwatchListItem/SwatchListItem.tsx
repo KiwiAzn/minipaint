@@ -1,4 +1,4 @@
-import { Heading, Box, Text, HStack } from "@chakra-ui/react";
+import { Box, Paper, Stack, Typography } from "@mui/material";
 import { FunctionComponent } from "react";
 import { Paint } from "../../../paints";
 import { Swatch } from "../Swatch/Swatch";
@@ -11,13 +11,13 @@ export const SwatchListItem: FunctionComponent<SwatchProps> = ({
   range,
 }) => {
   return (
-    <HStack borderWidth="1px">
-      <Swatch color={color} size="medium" />
-      <Box p={4}>
-        <Heading fontSize="xl">{name}</Heading>
-        <Text>{range}</Text>
-        <Text>{color}</Text>
+    <Stack component={Paper} direction="row">
+      <Swatch color={color} size="md" />
+      <Box p={2}>
+        <Typography variant="h5">{name}</Typography>
+        <Typography variant="h6">{range}</Typography>
+        <Typography variant="subtitle1">{color}</Typography>
       </Box>
-    </HStack>
+    </Stack>
   );
 };

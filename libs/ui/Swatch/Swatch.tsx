@@ -1,6 +1,6 @@
-import { FunctionComponent } from "react";
-import { Box, BoxProps } from "@chakra-ui/react";
 import React from "react";
+import { FunctionComponent } from "react";
+import { BoxProps, Box } from "@mui/material";
 
 export interface SwatchProps {
   size?: "sm" | "md" | "lg" | "xl";
@@ -14,7 +14,7 @@ const xlInPixels = "512px";
 
 export const Swatch: FunctionComponent<SwatchProps> = ({ size, color }) => {
   const commonProps: BoxProps = {
-    backgroundColor: color,
+    style: { backgroundColor: color },
     display: "inline-block",
   };
 

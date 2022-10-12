@@ -1,4 +1,3 @@
-import { Center, Container, Heading, SimpleGrid } from "@chakra-ui/react";
 import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -11,10 +10,11 @@ import {
   slugifiedBrandMapping,
   slugifiedBrandToPaintMapping,
 } from "../../../paints";
-import { slugify } from "../../../utils/slugify";
+import { slugify } from "../../../libs/utility/slugify";
 import { getDeltaE00 } from "delta-e";
 import { SwatchWithBrandListItem } from "../../../libs/ui/SwatchWithBrandListItem/SwatchWithBrandListItem";
-import { convertHexToLab } from "../../../utils/color";
+import { convertHexToLab } from "../../../libs/utility/color";
+import { Container, Grid, Stack, Typography } from "@mui/material";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
@@ -92,36 +92,38 @@ const Paints: NextPage<PaintProps> = ({ paint, similarPaints }) => {
   } = useRouter();
 
   return (
-    <Container maxW="container.lg" sx={{ mb: 8 }}>
+    <Container sx={{ mb: 8 }}>
       <Link href={`../${brand as string}`}>
-        <Heading size="4xl" sx={{ m: 4 }}>
+        <Typography variant="h1" gutterBottom>
           {slugifiedBrandMapping[brand as string]}
-        </Heading>
+        </Typography>
       </Link>
-      <Center sx={{ pt: 8, pb: 8 }}>
+      <Stack alignItems="center" sx={{ pb: 4 }}>
         <HeroSwatch {...paint} />
-      </Center>
-      <Heading size="3xl" sx={{ m: 4 }}>
+      </Stack>
+      <Typography variant="h2" gutterBottom>
         Similar paints
-      </Heading>
-      <SimpleGrid columns={2} spacing={2} alignItems="stretch">
+      </Typography>
+      <Grid container spacing={2} alignItems="stretch">
         {similarPaints.map(({ name, color, range, brand }) => {
           const href = `/paints/${slugify(brand)}/${slugify(name)}`;
 
           return (
-            <Link key={name} href={href}>
-              <a>
-                <SwatchWithBrandListItem
-                  brand={brand}
-                  name={name}
-                  color={color}
-                  range={range}
-                />
-              </a>
-            </Link>
+            <Grid item key={name} xs={6}>
+              <Link href={href}>
+                <a>
+                  <SwatchWithBrandListItem
+                    brand={brand}
+                    name={name}
+                    color={color}
+                    range={range}
+                  />
+                </a>
+              </Link>
+            </Grid>
           );
         })}
-      </SimpleGrid>
+      </Grid>
     </Container>
   );
 };

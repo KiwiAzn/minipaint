@@ -1,6 +1,6 @@
 import gamesWorkshop from "./gamesWorkshop";
 import scale75 from "./scale75";
-import { slugify } from "../utils/slugify";
+import { slugify } from "../libs/utility/slugify";
 
 export type PaintFinish = "Matte" | "Satin" | "Gloss" | "Metallic" | "String";
 

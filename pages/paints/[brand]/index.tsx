@@ -1,11 +1,11 @@
-import { Box, Container, Heading, Text, VStack } from "@chakra-ui/react";
 import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { ParsedUrlQuery } from "querystring";
 import { SwatchListItem } from "../../../libs/ui/SwatchListItem/SwatchListItem";
 import { Paint, paintsByBrand, slugifiedBrandMapping } from "../../../paints";
-import { slugify } from "../../../utils/slugify";
+import { slugify } from "../../../libs/utility/slugify";
+import { Container, Typography, Stack } from "@mui/material";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
@@ -45,11 +45,11 @@ const Paints: NextPage<PaintsByBrandProps> = ({ formattedBrand, paints }) => {
   } = useRouter();
 
   return (
-    <Container maxW="container.lg">
-      <Heading size="4xl" sx={{ m: 4 }}>
+    <Container>
+      <Typography variant="h1" gutterBottom>
         {formattedBrand}
-      </Heading>
-      <VStack spacing={2} alignItems="stretch">
+      </Typography>
+      <Stack spacing={2} alignItems="stretch">
         {paints.map(({ name, color, range }) => {
           const href = `${brand}/${slugify(name)}`;
 
@@ -61,7 +61,7 @@ const Paints: NextPage<PaintsByBrandProps> = ({ formattedBrand, paints }) => {
             </Link>
           );
         })}
-      </VStack>
+      </Stack>
     </Container>
   );
 };
