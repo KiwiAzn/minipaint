@@ -3,27 +3,15 @@ import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { ParsedUrlQuery } from "querystring";
-import slugify from "slugify";
 import { SwatchListItem } from "../../../libs/ui/SwatchListItem/SwatchListItem";
-import { Paint, paintsByBrand } from "../../../paints";
-
-const slugifyOptions = { lower: true };
-
-const slugifiedBrandMapping: Record<string, string> = Object.keys(
-  paintsByBrand
-).reduce(
-  (previous, brand) => ({
-    ...previous,
-    [slugify(brand, slugifyOptions)]: brand,
-  }),
-  {}
-);
+import { Paint, paintsByBrand, slugifiedBrandMapping } from "../../../paints";
+import { slugify } from "../../../utils/slugify";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: Object.keys(paintsByBrand).map((brand) => ({
       params: {
-        brand: slugify(brand, slugifyOptions),
+        brand: slugify(brand),
       },
     })),
     fallback: false,
@@ -63,7 +51,7 @@ const Paints: NextPage<PaintsByBrandProps> = ({ formattedBrand, paints }) => {
       </Heading>
       <VStack spacing={2} alignItems="stretch">
         {paints.map(({ name, color, range }) => {
-          const href = `${brand}/${slugify(name, slugifyOptions)}`;
+          const href = `${brand}/${slugify(name)}`;
 
           return (
             <Link key={name} href={href}>

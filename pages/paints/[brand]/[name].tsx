@@ -1,47 +1,25 @@
 import { Center, Container, Heading } from "@chakra-ui/react";
 import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { ParsedUrlQuery } from "querystring";
-import slugify from "slugify";
+
 import { HeroSwatch } from "../../../libs/ui/HeroSwatch/HeroSwatch";
-import { Paint, paintsByBrand } from "../../../paints";
-
-const slugifyOptions = { lower: true };
-
-const slugifiedBrandMapping: Record<string, string> = Object.keys(
-  paintsByBrand
-).reduce(
-  (previous, brand) => ({
-    ...previous,
-    [slugify(brand, slugifyOptions)]: brand,
-  }),
-  {}
-);
-
-const slugifiedBrandToPaintMapping: Record<
-  string,
-  Record<string, Paint>
-> = Object.entries(paintsByBrand).reduce(
-  (previous, [brand, paints]) => ({
-    ...previous,
-    [slugify(brand, slugifyOptions)]: paints.reduce(
-      (previousPaints, paint) => ({
-        ...previousPaints,
-        [slugify(paint.name, slugifyOptions)]: paint,
-      }),
-      {}
-    ),
-  }),
-  {}
-);
+import {
+  Paint,
+  paintsByBrand,
+  slugifiedBrandMapping,
+  slugifiedBrandToPaintMapping,
+} from "../../../paints";
+import { slugify } from "../../../utils/slugify";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: Object.entries(paintsByBrand).flatMap(([brand, paints]) => {
       return paints.map(({ name }) => ({
         params: {
-          brand: slugify(brand, slugifyOptions),
-          name: slugify(name, slugifyOptions),
+          brand: slugify(brand),
+          name: slugify(name),
         },
       }));
     }),
@@ -78,9 +56,11 @@ const Paints: NextPage<PaintProps> = ({ paint }) => {
 
   return (
     <Container maxW="container.lg">
-      <Heading size="4xl" sx={{ m: 4 }}>
-        {slugifiedBrandMapping[brand as string]}
-      </Heading>
+      <Link href={`../${brand as string}`}>
+        <Heading size="4xl" sx={{ m: 4 }}>
+          {slugifiedBrandMapping[brand as string]}
+        </Heading>
+      </Link>
       <Center pt={8}>
         <HeroSwatch {...paint} />
       </Center>
