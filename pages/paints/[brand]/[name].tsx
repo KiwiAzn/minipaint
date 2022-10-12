@@ -1,10 +1,4 @@
-import {
-  Center,
-  Container,
-  Heading,
-  SimpleGrid,
-  VStack,
-} from "@chakra-ui/react";
+import { Center, Container, Heading, SimpleGrid } from "@chakra-ui/react";
 import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -19,8 +13,8 @@ import {
 } from "../../../paints";
 import { slugify } from "../../../utils/slugify";
 import { getDeltaE00 } from "delta-e";
-import { hex } from "color-convert";
 import { SwatchWithBrandListItem } from "../../../libs/ui/SwatchWithBrandListItem/SwatchWithBrandListItem";
+import { convertHexToLab } from "../../../utils/color";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
@@ -49,11 +43,6 @@ interface PaintProps {
 interface PaintWithBrand extends Paint {
   brand: string;
 }
-
-const convertHexToLab = (hexCode: string) => {
-  const [L, A, B] = hex.lab(hexCode);
-  return { L, A, B };
-};
 
 const deltaEThreshold = 10;
 
