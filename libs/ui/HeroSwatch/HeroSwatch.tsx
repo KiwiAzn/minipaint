@@ -12,10 +12,10 @@ export const HeroSwatch: FunctionComponent<SwatchProps> = ({
 }) => {
   return (
     <Box shadow="md" borderWidth="1px" display="inline-block">
-      <Swatch color={color} size="large" />
+      <Swatch color={color} size="xl" />
       <Box p={4}>
-        <Heading fontSize="xl">{name}</Heading>
-        <Text>{range}</Text>
+        <Heading fontSize="4xl">{name}</Heading>
+        <Text fontSize="2xl">{range}</Text>
         <Text>{color}</Text>
       </Box>
     </Box>

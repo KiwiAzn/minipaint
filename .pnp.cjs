@@ -57,10 +57,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/react", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:6.5.12"],\
             ["@storybook/testing-library", "npm:0.0.13"],\
             ["@types/babel__preset-env", "npm:7.9.2"],\
+            ["@types/color-convert", "npm:2.0.0"],\
+            ["@types/delta-e", "npm:0.0.0"],\
             ["@types/node", "npm:18.8.3"],\
             ["@types/react", "npm:18.0.21"],\
             ["@types/react-dom", "npm:18.0.6"],\
             ["babel-loader", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:8.2.5"],\
+            ["color-convert", "npm:2.0.1"],\
+            ["delta-e", "npm:0.0.8"],\
             ["eslint", "npm:8.25.0"],\
             ["eslint-config-next", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:12.3.1"],\
             ["eslint-plugin-storybook", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:0.6.5"],\
@@ -9631,6 +9635,34 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/color-convert", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/@types-color-convert-npm-2.0.0-f59f3c146a-027b68665d.zip/node_modules/@types/color-convert/",\
+          "packageDependencies": [\
+            ["@types/color-convert", "npm:2.0.0"],\
+            ["@types/color-name", "npm:1.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/color-name", [\
+        ["npm:1.1.1", {\
+          "packageLocation": "./.yarn/cache/@types-color-name-npm-1.1.1-00b0925070-b71fcad728.zip/node_modules/@types/color-name/",\
+          "packageDependencies": [\
+            ["@types/color-name", "npm:1.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/delta-e", [\
+        ["npm:0.0.0", {\
+          "packageLocation": "./.yarn/cache/@types-delta-e-npm-0.0.0-43db322cde-627f1aa8c8.zip/node_modules/@types/delta-e/",\
+          "packageDependencies": [\
+            ["@types/delta-e", "npm:0.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/eslint", [\
         ["npm:8.4.6", {\
           "packageLocation": "./.yarn/cache/@types-eslint-npm-8.4.6-a8726d8319-bfaf27b000.zip/node_modules/@types/eslint/",\
@@ -13371,6 +13403,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/delegates-npm-1.0.0-9b1942d75f-a51744d9b5.zip/node_modules/delegates/",\
           "packageDependencies": [\
             ["delegates", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["delta-e", [\
+        ["npm:0.0.8", {\
+          "packageLocation": "./.yarn/cache/delta-e-npm-0.0.8-9a6ce3e780-1f145201ca.zip/node_modules/delta-e/",\
+          "packageDependencies": [\
+            ["delta-e", "npm:0.0.8"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -18382,10 +18423,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/react", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:6.5.12"],\
             ["@storybook/testing-library", "npm:0.0.13"],\
             ["@types/babel__preset-env", "npm:7.9.2"],\
+            ["@types/color-convert", "npm:2.0.0"],\
+            ["@types/delta-e", "npm:0.0.0"],\
             ["@types/node", "npm:18.8.3"],\
             ["@types/react", "npm:18.0.21"],\
             ["@types/react-dom", "npm:18.0.6"],\
             ["babel-loader", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:8.2.5"],\
+            ["color-convert", "npm:2.0.1"],\
+            ["delta-e", "npm:0.0.8"],\
             ["eslint", "npm:8.25.0"],\
             ["eslint-config-next", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:12.3.1"],\
             ["eslint-plugin-storybook", "virtual:6f2b063d5e23385b3fed86e8d582d4af4ae267c826b7e093bb903c3ddf902427577b5a3adea67b6dfde3d08d72b08d672b89e6a9187b9c8dfa46bb82a42c5089#npm:0.6.5"],\

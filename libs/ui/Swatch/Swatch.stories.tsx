@@ -18,17 +18,22 @@ const Template: ComponentStory<typeof Swatch> = (args) => <Swatch {...args} />;
 export const Default = Template.bind({});
 Default.args = {};
 
+export const ExtraLarge = Template.bind({});
+ExtraLarge.args = {
+  size: "xl",
+};
+
 export const Large = Template.bind({});
 Large.args = {
-  size: "large",
+  size: "lg",
 };
 
 export const Medium = Template.bind({});
 Medium.args = {
-  size: "medium",
+  size: "md",
 };
 
 export const Small = Template.bind({});
 Small.args = {
-  size: "small",
+  size: "sm",
 };

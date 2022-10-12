@@ -4974,6 +4974,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/color-convert@npm:^2":
+  version: 2.0.0
+  resolution: "@types/color-convert@npm:2.0.0"
+  dependencies:
+    "@types/color-name": "*"
+  checksum: 027b68665dc2278cc2d83e796ada0a05a08aa5a11297e227c48c7f9f6eac518dec98578ab0072bd211963d3e4b431da70b20ea28d6c3136d0badfd3f9913baee
+  languageName: node
+  linkType: hard
+
+"@types/color-name@npm:*":
+  version: 1.1.1
+  resolution: "@types/color-name@npm:1.1.1"
+  checksum: b71fcad728cc68abcba1d405742134410c8f8eb3c2ef18113b047afca158ad23a4f2c229bcf71a38f4a818dead375c45b20db121d0e69259c2d81e97a740daa6
+  languageName: node
+  linkType: hard
+
+"@types/delta-e@npm:^0.0.0":
+  version: 0.0.0
+  resolution: "@types/delta-e@npm:0.0.0"
+  checksum: 627f1aa8c8c848271a0ff7fa119acb2ba99291209316b94cff77080694198e829e8be4b8493b8972ab6dc63357a3cec7ed88c22cf002a4ac59e41bde34f642ac
+  languageName: node
+  linkType: hard
+
 "@types/eslint-scope@npm:^3.7.3":
   version: 3.7.4
   resolution: "@types/eslint-scope@npm:3.7.4"
@@ -8040,6 +8063,13 @@ __metadata:
   version: 1.0.0
   resolution: "delegates@npm:1.0.0"
   checksum: a51744d9b53c164ba9c0492471a1a2ffa0b6727451bdc89e31627fdf4adda9d51277cfcbfb20f0a6f08ccb3c436f341df3e92631a3440226d93a8971724771fd
+  languageName: node
+  linkType: hard
+
+"delta-e@npm:^0.0.8":
+  version: 0.0.8
+  resolution: "delta-e@npm:0.0.8"
+  checksum: 1f145201ca8f75b9b4014b85e135335e89b975081c2bb51e58c1c5c31ca41b9e4b8e9761da7dd215c69f91830f4275f14d6c71816bbaef5ad7436336b2353f5d
   languageName: node
   linkType: hard
 
@@ -12420,10 +12450,14 @@ __metadata:
     "@storybook/react": ^6.5.12
     "@storybook/testing-library": ^0.0.13
     "@types/babel__preset-env": ^7
+    "@types/color-convert": ^2
+    "@types/delta-e": ^0.0.0
     "@types/node": 18.8.3
     "@types/react": 18.0.21
     "@types/react-dom": 18.0.6
     babel-loader: ^8.2.5
+    color-convert: ^2.0.1
+    delta-e: ^0.0.8
     eslint: 8.25.0
     eslint-config-next: 12.3.1
     eslint-plugin-storybook: ^0.6.5

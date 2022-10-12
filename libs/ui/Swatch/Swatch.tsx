@@ -3,13 +3,14 @@ import { Box, BoxProps } from "@chakra-ui/react";
 import React from "react";
 
 export interface SwatchProps {
-  size?: "small" | "medium" | "large";
+  size?: "sm" | "md" | "lg" | "xl";
   color: string;
 }
 
-const smallInPixels = "64px";
-const mediumInPixels = "128px";
-const largeInPixels = "256px";
+const smInPixels = "64px";
+const mdInPixels = "128px";
+const lgInPixels = "256px";
+const xlInPixels = "512px";
 
 export const Swatch: FunctionComponent<SwatchProps> = ({ size, color }) => {
   const commonProps: BoxProps = {
@@ -17,29 +18,26 @@ export const Swatch: FunctionComponent<SwatchProps> = ({ size, color }) => {
     display: "inline-block",
   };
 
-  if (size === "small") {
+  if (size === "sm") {
     return (
-      <Box
-        {...commonProps}
-        sx={{ height: smallInPixels, width: smallInPixels }}
-      />
+      <Box {...commonProps} sx={{ height: smInPixels, width: smInPixels }} />
     );
   }
 
-  if (size === "large") {
+  if (size === "lg") {
     return (
-      <Box
-        {...commonProps}
-        sx={{ height: largeInPixels, width: largeInPixels }}
-      />
+      <Box {...commonProps} sx={{ height: lgInPixels, width: lgInPixels }} />
+    );
+  }
+
+  if (size === "xl") {
+    return (
+      <Box {...commonProps} sx={{ height: xlInPixels, width: xlInPixels }} />
     );
   }
 
   // Medium is default
   return (
-    <Box
-      {...commonProps}
-      sx={{ height: mediumInPixels, width: mediumInPixels }}
-    />
+    <Box {...commonProps} sx={{ height: mdInPixels, width: mdInPixels }} />
   );
 };
